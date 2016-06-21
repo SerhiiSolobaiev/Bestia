@@ -33,10 +33,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initViews();
 
-        imageView1.setImageResource(R.drawable.main_part_1);
-        imageView2.setImageResource(R.drawable.main_part_2);
-        imageView3.setImageResource(R.drawable.main_part_3);
-
         setOnNewsClickListener();
 
         //posters from json:
