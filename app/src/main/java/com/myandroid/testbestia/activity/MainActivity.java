@@ -20,7 +20,6 @@ import java.util.List;
 
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 
-
 public class MainActivity extends AppCompatActivity {
 
     private RelativeLayout baseView;
@@ -58,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Class for compressing images from resources (in real project must exist folders
+     * drawable-hdpi, drawable-mdpi, ... for supporting different screen densities)
+     */
     private class SetImageResourcesTask extends AsyncTask<Void, Void, List<Bitmap>> {
 
         @Override
@@ -77,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
             imageView1.setImageBitmap(bitmaps.get(0));
             imageView2.setImageBitmap(bitmaps.get(1));
             imageView3.setImageBitmap(bitmaps.get(2));
+
             setOnNewsClickListener();
 
             //posters from json:
